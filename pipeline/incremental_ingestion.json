@@ -146,6 +146,10 @@
 				],
 				"userProperties": [],
 				"typeProperties": {
+					"expression": {
+						"value": "@greater(activity('sqltodatalake').output.dataread,0)\n",
+						"type": "Expression"
+					},
 					"ifFalseActivities": [
 						{
 							"name": "Delete1",
